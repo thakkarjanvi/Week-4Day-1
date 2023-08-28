@@ -1,0 +1,7 @@
+<p>parent works!</p>
+<!-- parent.component.html -->
+
+<div *ngFor="let item of items; let i = index">
+    <app-child [item]="item" (removeItem)="removeItem(i)"></app-child>
+  </div>
+  
